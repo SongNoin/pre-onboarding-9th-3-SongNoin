@@ -17,7 +17,7 @@ export const Main = () => {
   }, [SeleltedOptions, isFiltered]);
 
   async function getChartData() {
-    const chartRes = await axios.get('./src/data/chart_data.json');
+    const chartRes = await axios.get('public/data/chart_data.json');
     const chartDataObj: IChartObj = chartRes.data.response;
     const chartDataArr = [];
     const IdArr: string[] = [];
